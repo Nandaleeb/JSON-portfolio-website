@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/portfolio.html">Portfolio</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <header>
+    <h1>PortfolioVista</h1>
+  </header>
+  <section>
+    <h2 class="add-project-title">Add a New Project</h2>
+    <form id="project-form" class="themed-form" enctype="multipart/form-data">
+      <input type="text" name="title" placeholder="Project Title" required>
+      <textarea name="description" placeholder="Project Description" required></textarea>
+      <input type="url" name="link" placeholder="Project Link (https://...)" required>
+      <label for="imageFile">Project Image (optional):</label>
+      <input type="file" id="imageFile" name="imageFile" accept="image/*" title="Upload an image for your project (optional)" placeholder="Choose an image (optional)">
+      <button type="submit">Add Project</button>
+      <div id="form-status"></div>
+    </form>
+  </section>
+  <section id="portfolio-list">
+    <!-- Portfolio items will be loaded here by JS -->
+  </section>
+  <footer>
+    <div class="footer-content">
+      <span>&copy; 2026 Noshi Andaleeb. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://github.com/yourprofile" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/noshiandaleeb" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:your@email.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="/portfolio.js"></script>
+</body>
+</html>
